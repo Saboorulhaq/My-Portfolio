@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Saboor Ulhaq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      try {
+        var t =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme:dark)").matches
+            ? "dark"
+            : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="index.html">S.</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html">Contact</a>
+          <button id="theme" aria-label="Switch light and dark theme">◐</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap page page-in">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>MovieBox</h3>
+          <small>React Native · Redux · REST APIs · Supabase</small>
+          <p>
+            An IMDB-style mobile app where users share movie info and review
+            movies. It has login and logout, movie search, star ratings,
+            trailers and a favourites list for each user.
+          </p>
+          <a
+            href="https://github.com/Saboorulhaq/MovieBox"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </article>
+        <article class="card">
+          <h3>Farmer App (Ghana)</h3>
+          <small>TypeScript · Git &amp; GitHub</small>
+          <p>
+            A client mobile app that helps farmers apply for government loans. I
+            worked on tasks assigned by a senior developer in a real client
+            workflow.
+          </p>
+          <a
+            href="https://github.com/Saboorulhaq"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </article>
+        <article class="card">
+          <h3>Planet Data Analysis</h3>
+          <small>Python · Web scraping · Algorithms</small>
+          <p>
+            Scraped planet data from Wikipedia and analysed it with data
+            structures and algorithms.
+          </p>
+          <a
+            href="https://github.com/Saboorulhaq"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </article>
+        <article class="card">
+          <h3>Watches Store</h3>
+          <small>React.js · JavaScript</small>
+          <p>
+            A watches UI built to practise React hooks, component structure and
+            state management.
+          </p>
+          <a
+            href="https://github.com/Saboorulhaq"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </article>
+        <article class="card">
+          <h3>Restaurant Website</h3>
+          <small>HTML · CSS</small>
+          <p>
+            A restaurant website with a brochure section and a video
+            advertisement, built for the AICT lab.
+          </p>
+          <a
+            href="https://github.com/Saboorulhaq"
+            target="_blank"
+            rel="noopener"
+            >View on GitHub</a
+          >
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">© 2026 Saboor Ulhaq. Lahore, Pakistan.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

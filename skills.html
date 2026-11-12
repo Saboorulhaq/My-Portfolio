@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skills | Saboor Ulhaq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      try {
+        var t =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme:dark)").matches
+            ? "dark"
+            : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="index.html">S.</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="skills.html" class="active">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <button id="theme" aria-label="Switch light and dark theme">◐</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap page page-in">
+      <h2>Skills</h2>
+      <div class="skillgroup">
+        <h3>Languages</h3>
+        <div class="chips">
+          <span>HTML</span><span>JavaScript</span><span>TypeScript</span
+          ><span>Python</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skillgroup">
+        <h3>Frameworks</h3>
+        <div class="chips">
+          <span>React.js</span><span>React Native</span><span>BootStrap</span>
+        </div>
+      </div>
+      <div class="skillgroup">
+        <h3>Backend</h3>
+        <div class="chips">
+          <span>REST APIs</span><span>Supabase</span><span>MySQL</span>
+        </div>
+      </div>
+      <div class="skillgroup">
+        <h3>State Management</h3>
+        <div class="chips"><span>Redux</span></div>
+      </div>
+      <div class="skillgroup">
+        <h3>Tools</h3>
+        <div class="chips"><span>Git</span><span>GitHub</span></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">© 2026 Saboor Ulhaq. Lahore, Pakistan.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

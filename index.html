@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Saboor Ulhaq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Instrument+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      try {
+        var t =
+          localStorage.getItem("theme") ||
+          (matchMedia("(prefers-color-scheme:dark)").matches
+            ? "dark"
+            : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="index.html">S.</a>
+        <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <button id="theme" aria-label="Switch light and dark theme">◐</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap page page-in">
+      <section class="hero">
+        <div>
+          <h1>Hi, I’m<br /><span class="nm">Saboor Ulhaq</span></h1>
+          <p class="role">Frontend &amp; Mobile Developer</p>
+          <p class="intro">
+          I'm a Computer Science student and aspiring software developer passionate about building modern web and mobile applications.
+           I enjoy exploring new technologies, solving problems, and turning ideas into functional digital experiences.
+          </p>
+
+          <section class="about-section" id="about">
+            <h3 style="margin-bottom: 10px;">About Me</h2>
+            <div class="about">
+             <p>I'm currently pursuing a <b><strong>BS in Computer Science (Gaming & Animation) at UET Lahore (2025–2029). </strong></b>
+              My technical skills include HTML, CSS, Bootstrap, JavaScript, React.js, React Native, Redux, REST APIs, and 
+             <p style="width: 900px;margin-top: -20px;"> Supabase.I love learning, experimenting with new technologies, and building projects that improve my development skills. 
+             My goal is to become a skilled software engineer and create meaningful digital products.</p>
+            </p>
+          </div>
+          </section>
+
+          <div class="actions">
+            <a class="btn" href="projects.html">View projects</a>
+            <a class="btn ghost" href="assets/Saboor_Ulhaq_Resume.docx" download
+              >Download CV</a
+            >
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="img/hero.png" alt="Saboor Ulhaq" />
+          <figcaption>
+            <span>Lahore, Pakistan</span><span>Open to Work</span>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">© 2026 Saboor Ulhaq. Lahore, Pakistan.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
